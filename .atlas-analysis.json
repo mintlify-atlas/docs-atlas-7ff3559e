@@ -1,0 +1,108 @@
+{
+  "projectType": "frontend",
+  "projectName": "Dashi",
+  "projectDescription": "An AI-powered desktop voice assistant with conversational capabilities built using Next.js, React, and Tauri.",
+  "theme": "palm",
+  "primaryColor": "#8CEBE5",
+  "lightColor": "#D500D8",
+  "darkColor": "#000000",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/voice-interaction",
+              "features/chat-interface",
+              "features/ai-integration"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/architecture",
+              "development/frontend",
+              "development/backend",
+              "development/building"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Components",
+        "groups": [
+          {
+            "group": "UI Components",
+            "pages": [
+              "components/overview",
+              "components/animated-vector-box",
+              "components/buttons",
+              "components/cards",
+              "components/inputs"
+            ]
+          },
+          {
+            "group": "Hooks & Utilities",
+            "pages": [
+              "hooks/use-voice-recorder",
+              "utilities/utils"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "TypeScript APIs",
+            "pages": [
+              "api/letta-client",
+              "api/voice-recorder",
+              "api/mcp-manager"
+            ]
+          },
+          {
+            "group": "Rust APIs",
+            "pages": [
+              "api/rust/transcribe",
+              "api/rust/audio-processing"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Voice-activated AI assistant with push-to-talk functionality",
+    "Real-time speech-to-text transcription using Groq Whisper API",
+    "Conversational AI powered by Letta AI client",
+    "Dual interaction modes: voice and text chat",
+    "Animated UI with gradient vector graphics and smooth transitions",
+    "Cross-platform desktop application built with Tauri",
+    "Rust backend for high-performance audio processing",
+    "Next.js 15 frontend with React 19 and Framer Motion animations"
+  ],
+  "publicApiSurface": [
+    "useVoiceRecorder() - React hook for voice recording",
+    "letta_client - Letta AI client instance",
+    "generate_response(input: string) - Generate AI response stream",
+    "transcribe(audio: Vec<f32>) - Rust command to transcribe audio",
+    "process_audio(audio: Vec<f32>) - Rust command to process audio to WAV",
+    "AnimatedVectorBox - Main animated UI component",
+    "Button - UI button component",
+    "Card - UI card component",
+    "Input - UI input component",
+    "McpServerManager - MCP server configuration component",
+    "cn() - Utility for className merging"
+  ]
+}
